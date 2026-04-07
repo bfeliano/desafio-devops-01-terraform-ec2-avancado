@@ -17,12 +17,6 @@ variable "instance_name" {
   default     = "desafio-devops-01-ec2"
 }
 
-variable "sg_name" {
-  description = "Nome do Security Group"
-  type        = string
-  default     = "desafio-devops-01-sg"
-}
-
 variable "environment" {
   description = "Ambiente (dev, prod)"
   type        = string
@@ -31,6 +25,7 @@ variable "environment" {
 
 variable "user_data" {
   description = "Arquivo para ser utilizado como user_data"
+  type        = string
 }
 
 variable "security_group_ids" {
