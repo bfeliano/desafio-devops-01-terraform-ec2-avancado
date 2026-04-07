@@ -17,7 +17,7 @@ override.tf.json
 *_override.tf
 *_override.tf.json
 
-*.tfvars
+# *.tfvars    TF VARS FOI COMENTADO PARA QUE POSSA SER UTILIZADO COMO EXEMPLO NA SOLUÇÃO, MAS GERALMENTE DEVE SER IGNORADO
 *.tfvars.json
 
 crash.log
