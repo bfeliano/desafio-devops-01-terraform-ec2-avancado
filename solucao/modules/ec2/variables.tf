@@ -35,18 +35,18 @@ variable "user_data" {
 
 variable "security_group_ids" {
   description = "Lista de SG que serão utilizados"
-  type = list(string)
+  type        = list(string)
 }
 
 
 variable "use_instance_profile" {
   description = "Variável para checar se a instância utilizará um Instance Profile"
-  type = bool
-  default = false
+  type        = bool
+  default     = false
 }
 
 
 variable "instance_profile" {
   description = "Instance Profile criada pelo módulo IAM"
-  type = string
+  type        = string
 }
