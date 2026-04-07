@@ -21,7 +21,7 @@ resource "aws_instance" "web" {
   vpc_security_group_ids = var.security_group_ids
   user_data              = var.user_data
 
-  iam_instance_profile   = var.use_instance_profile ? var.instance_profile : null
+  iam_instance_profile = var.use_instance_profile ? var.instance_profile : null
 
   tags = {
     Name        = var.instance_name

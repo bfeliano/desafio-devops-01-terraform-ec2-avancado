@@ -24,7 +24,7 @@ jobs:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
         with:
-          terraform_version: 1.6.6
+          terraform_version: 1.14.8
 
       - name: Terraform Init
         run: terraform init -input=false
@@ -45,10 +45,8 @@ jobs:
           tflint_version: latest
 
       - name: Run TFLint
-        run: |
-          cd ../../
-          tflint --recursive
-        working-directory: solucao
+        run: tflint --recursive
+        working-directory: solucao/modules
         env:
           AWS_DEFAULT_REGION: us-east-1
 
