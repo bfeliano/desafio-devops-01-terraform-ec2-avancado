@@ -46,7 +46,7 @@ jobs:
 
       - name: Run TFLint
         run: tflint --recursive
-        working-directory: modules
+        working-directory: solucao/modules
         env:
           AWS_DEFAULT_REGION: us-east-1
 
