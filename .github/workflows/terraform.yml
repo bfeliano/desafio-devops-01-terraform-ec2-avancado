@@ -46,7 +46,7 @@ jobs:
 
       - name: Run TFLint
         run: |
-          cd ../../
+          cd ../../modules
           tflint --recursive
         working-directory: solucao
         env:
